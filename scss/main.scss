@@ -1,0 +1,36 @@
+.lista-guitarras{   
+            margin: 25px 200px;
+                    ul{
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+
+                    li{
+                        list-style: none;
+                        margin: 25px;
+                    }
+                    li:hover{
+                        border: solid 2px grey;
+                       
+                        
+                    }
+                    img{
+                            width: 64px;
+                            height: 95px;
+                            transition-duration: 1s;
+                    }
+                    img:hover{
+                        width:100px;
+                        height:140px;
+                        
+                    }
+                    
+                    
+                    h4{
+                        font-weight: 300;
+                        justify-content: center;
+                        margin: 20px 15px;
+                    }
+}
+
+
