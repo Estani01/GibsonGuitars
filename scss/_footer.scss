@@ -1,0 +1,49 @@
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 100px;
+    a{ 
+        text-decoration: none;
+        color: white;
+    } 
+    a:hover{
+        color: grey;
+    }
+    p{
+        color: white;
+    }
+    
+}
+
+.div1-footer{
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        h2{
+            font-size: 20px;
+            text-decoration: underline;
+        }
+       
+      
+        
+        img{
+            width: 70px;
+            height: 50px;
+        }
+
+}
+
+.div2-footer{
+                h3{
+                    color: white;
+                    font-size: 20px;
+                    text-decoration:double
+              }
+
+                form{
+                    display: flex;
+                    margin: 20px;
+                }
+                
+}

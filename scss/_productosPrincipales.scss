@@ -1,0 +1,33 @@
+#titulo-productos-nuevos{
+    text-align: center;
+    color: gold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#productos-nuevos{
+        display: flex;
+        justify-content: space-around;
+}
+
+
+.card{
+    background-color: antiquewhite;
+    height: 440px !important;
+    
+    h3{
+        background-color: black;
+        color: gold;
+    }
+
+   button{
+            background-color: black;
+            color: white;
+   } 
+  button:hover {
+        opacity: 0.7;
+      }
+
+
+    }
+
+

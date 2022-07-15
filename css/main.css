@@ -1,21 +1,102 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 100px; }
+  .footer a {
+    text-decoration: none;
+    color: white; }
+  .footer a:hover {
+    color: grey; }
+  .footer p {
+    color: white; }
+
+.div1-footer {
+  display: flex;
+  flex-direction: column;
+  color: white; }
+  .div1-footer h2 {
+    font-size: 20px;
+    text-decoration: underline; }
+  .div1-footer img {
+    width: 70px;
+    height: 50px; }
+
+.div2-footer h3 {
+  color: white;
+  font-size: 20px;
+  text-decoration: double; }
+
+.div2-footer form {
+  display: flex;
+  margin: 20px; }
+
+#titulo-productos-nuevos {
+  text-align: center;
+  color: gold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+#productos-nuevos {
+  display: flex;
+  justify-content: space-around; }
+
+.card {
+  background-color: antiquewhite;
+  height: 440px !important; }
+  .card h3 {
+    background-color: black;
+    color: gold; }
+  .card button {
+    background-color: black;
+    color: white; }
+  .card button:hover {
+    opacity: 0.7; }
+
+.home-body {
+  background-color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: center; }
+  .nav ul {
+    display: flex;
+    margin: 4px 200px; }
+  .nav li {
+    list-style: none;
+    font-size: 25px;
+    color: beige;
+    margin: 5px 40px; }
+  .nav a {
+    text-decoration: none;
+    color: white; }
+  .nav a:hover {
+    color: grey; }
+
 .lista-guitarras {
-  margin: 25px 200px; }
+  margin: 25px 200px;
+  background-color: white; }
   .lista-guitarras ul {
     display: flex;
     justify-content: space-evenly; }
   .lista-guitarras li {
     list-style: none;
     margin: 25px; }
-  .lista-guitarras li:hover {
-    border: solid 2px grey; }
   .lista-guitarras img {
     width: 64px;
     height: 95px;
-    transition-duration: 1s; }
-  .lista-guitarras img:hover {
-    width: 100px;
-    height: 140px; }
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; }
   .lista-guitarras h4 {
     font-weight: 300;
     justify-content: center;
     margin: 20px 15px; }
+
+#home-aside {
+  margin: 25px 200px;
+  background-color: white; }
+  #home-aside h2 {
+    font-size: 25px;
+    margin: 10px 80px; }
+  #home-aside p {
+    margin: 25px 150px; }

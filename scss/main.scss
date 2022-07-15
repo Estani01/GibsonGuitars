@@ -1,5 +1,46 @@
+@import "_footer";
+
+@import "_productosPrincipales";
+
+
+
+.home-body{
+    background-color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+.nav{
+    background-color: black;
+            display: flex;  
+            justify-content: center;  
+            
+            ul{
+                display: flex;
+                margin: 4px 200px;
+                
+                
+            }
+            li{
+                list-style: none;
+                font-size: 25px;
+                color: beige;
+                margin: 5px 40px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            a:hover{
+                color: grey;
+            }
+}
+
+
+
 .lista-guitarras{   
             margin: 25px 200px;
+            background-color: white;          
                     ul{
                         display: flex;
                         justify-content: space-evenly;
@@ -9,21 +50,17 @@
                         list-style: none;
                         margin: 25px;
                     }
-                    li:hover{
-                        border: solid 2px grey;
+                    
                        
                         
-                    }
+                    
                     img{
                             width: 64px;
                             height: 95px;
                             transition-duration: 1s;
+                            transition-timing-function: ease-in-out;
                     }
-                    img:hover{
-                        width:100px;
-                        height:140px;
-                        
-                    }
+                    
                     
                     
                     h4{
@@ -32,5 +69,21 @@
                         margin: 20px 15px;
                     }
 }
+
+
+
+
+#home-aside{
+    margin: 25px 200px;
+    background-color: white;
+                            h2{
+                                font-size: 25px;
+                                margin: 10px 80px;
+                            }
+                            p{
+                                margin: 25px 150px;
+                            }
+}
+
 
 
