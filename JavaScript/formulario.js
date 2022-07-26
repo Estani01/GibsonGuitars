@@ -6,20 +6,28 @@ function validacion(e) {
     let form= e.target;
     sessionStorage.setItem("nombre", form.children[0].value);
     sessionStorage.setItem("mail", form.children[1].value);
-
-
-   nombreUsuario= sessionStorage.getItem("nombre");
-   mailUsuario= sessionStorage.getItem("mail");
-   
-  const respuestaFormulario= document.getElementById("respuesta-formulario");
-  let item=document.createElement("h3");
- item.innerHTML= `<h3>BIENVENIDO ${nombreUsuario}</h3>
- LE ENVIAREMOS TODA LA INFORMACIÓN A ${mailUsuario}`
-
- respuestaFormulario.append(item);
-
-
 }
+
+   nombreIngresado= sessionStorage.getItem("nombre");
+   mailIngresado= sessionStorage.getItem("mail");
+
+   
+//seccion de libreria//
+
+   let enviar =document.getElementById("boton");
+   enviar.addEventListener("click", () =>{
+     Swal.fire({
+         position: 'top-end', 
+         icon: 'success',
+         title: 'tu suscripcion fue inscripta!',
+         showConfirmButton: false,
+         timer: 1500
+       });
+   });
+
+
+
+
 
 
 

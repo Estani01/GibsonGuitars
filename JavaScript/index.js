@@ -25,49 +25,7 @@ containerNuevas.append(item);
 }
 
 
-let carrito = [];
-let seccionCarrito = document.getElementById("carritoCompras");
 
-
-let totalCompra = document.getElementById("carritoTotal");
-totalCompra.innerHTML = "<h3>Total: </h3>"
-seccionCarrito.appendChild(totalCompra);
-
-
-let montoTotalCompra = document.createElement("h3");
-montoTotalCompra.innerText = "$0";
-totalCompra.appendChild(montoTotalCompra);
-
-
-let cantidadProductos = document.createElement("div");
-cantidadProductos.innerHTML = "<h5>Cantidad de productos: </h5>"
-seccionCarrito.appendChild(cantidadProductos);
-
-let cantProducts = document.createElement("h5");
-cantProducts.innerText = "0";
-cantidadProductos.appendChild(cantProducts); 
-
-
-// funciones del carrito
-function agregarAlCarrito (id){
-
-            carrito.push(NUEVAS.find(p=>p.id==id));
-            localStorage.setItem("carrito", JSON.stringify(carrito));
-
-            calcularTotalCarrito();
-};
-
-
-function calcularTotalCarrito() {
-    let total = 0;
-    for (const producto of carrito) {
-        total+=producto.precio;
-    }
-    montoTotalCompra.innerText = "$" + total;
-    cantProducts.innerText = carrito.length;
-}
-
-document.getElementById(`${guitarra.id}`).onclick = () => agregarAlCarrito(`${guitarra.id}`)  
 
 
 
