@@ -1,4 +1,4 @@
-const Formulario= document.getElementById("formulario");
+let Formulario= document.getElementById("formulario");
 Formulario.addEventListener("submit", validacion)
 function validacion(e) {
     e.preventDefault();
@@ -26,7 +26,7 @@ function validacion(e) {
    });
 
 
-
+console.log(enviar);
 
 
 
